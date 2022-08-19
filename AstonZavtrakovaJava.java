@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class AstonZavtrakovaJava {
     public static void printHello() {
-        int aNumber = new Scanner(System.in).nextInt();
         System.out.println("Введите число \n");
+        int aNumber = new Scanner(System.in).nextInt();
         if (aNumber > 7) {
             System.out.print("Привет \n");
         }
     }
 
     public static void checkRealName() {
-        String yourName = new Scanner(System.in).nextLine();
         System.out.println("Введите имя \n");
-        String realName = "Вячеслав";
+        String yourName = new Scanner(System.in).nextLine();
+                String realName = "Вячеслав";
         if (yourName.equals(realName)) {
             System.out.print("Привет, " + realName);
         } else {
