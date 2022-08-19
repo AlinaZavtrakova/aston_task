@@ -26,12 +26,11 @@ public class AstonZavtrakovaJava {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите длину числового массива \n");
         int size = input.nextInt();
-        int array[] = new int[size];
         System.out.println("Введите элементы числового массива: \n");
         for (int i = 0; i < size; i++) {
-            array[i] = input.nextInt();
-            if (array[i] % 3 == 0) {
-                System.out.print(array[i]);
+            int anyInt = input.nextInt();
+            if (anyInt % 3 == 0) {
+                System.out.print(anyInt);
             }
         }
     }
